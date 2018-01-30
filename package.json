@@ -1,7 +1,7 @@
 {
   "name": "vue-modules-plugin",
   "description": "Module supports for VueJS components",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "private": false,
   "main": "dist/vue-modules-plugin.js",
   "files": [
@@ -21,7 +21,6 @@
   "license": "MIT",
   "homepage": "",
   "scripts": {
-    "install": "npm run build:library",
     "dev": "node build/dev-server.js",
     "build": "npm run build:library && npm run build:demo",
     "build:demo": "node build/build.js",
