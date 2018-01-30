@@ -1,0 +1,208 @@
+{
+  "plugins": [
+    "flowtype"
+  ],
+  "extends": [
+    "plugin:flowtype/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "for-direction": "error",
+    "getter-return": "error",
+    "no-compare-neg-zero": "warn",
+    "no-cond-assign": "error",
+    "no-console": "warn",
+    "no-constant-condition": "error",
+    "no-control-regex": "warn",
+    "no-debugger": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "error",
+    "no-empty-character-class": "error",
+    "no-ex-assign": "error",
+    "no-extra-boolean-cast": "error",
+    "no-extra-parens": "warn",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-func-assign": "error",
+    "no-inner-declarations": "error",
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "error",
+    "no-obj-calls": "error",
+    "no-prototype-builtins": "error",
+    "no-regex-spaces": "error",
+    "no-sparse-arrays": "error",
+    "no-template-curly-in-string": "warn",
+    "no-unreachable": "error",
+    "no-unsafe-finally": "error",
+    "no-unsafe-negation": "error",
+    "use-isnan": "error",
+    "valid-jsdoc": "warn",
+    "valid-typeof": "error",
+    // Best practices
+    "accessor-pairs": "warn",
+    "array-callback-return": "error",
+    "block-scoped-var": "error",
+    "class-methods-use-this": "off",
+    "complexity": [
+      "warn",
+      5
+    ],
+    "consistent-return": "error",
+    "curly": "error",
+    "default-case": "error",
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "guard-for-in": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-alert": "error",
+    "no-caller": "error",
+    "no-fallthrough": "error",
+    "no-case-declarations": "error",
+    "no-div-regex": "error",
+    "no-else-return": "error",
+    "no-empty-function": "error",
+    "no-empty-pattern": "error",
+    "no-eq-null": "off",
+    "no-eval": "error",
+    "no-extend-native": "error",
+    "no-extra-bind": "error",
+    "no-invalid-this": "error",
+    "no-labels": "error",
+    "no-multi-spaces": "error",
+    "no-multi-str": "error",
+    "no-param-reassign": "error",
+    "no-redeclare": "error",
+    "no-useless-return": "error",
+    "no-unused-vars": "error",
+    "no-use-before-define": "error",
+    "array-bracket-newline": [
+      "error",
+      "consistent"
+    ],
+    "camelcase": "error",
+    "space-before-function-paren": "error",
+    "capitalized-comments": "error",
+    "comma-dangle": "error",
+    "comma-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": false
+      }
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "func-call-spacing": [
+      "error",
+      "never"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "max-len": [
+      "error",
+      120
+    ],
+    "max-lines": [
+      "error",
+      300
+    ],
+    "max-statements-per-line": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "new-cap": "error",
+    "no-tabs": "error",
+    // This can be usefull but it is sooo annoying.
+    "no-trailing-spaces": "off",
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var",
+          "expression"
+        ],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var",
+          "expression"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var",
+          "expression"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": "import",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "import",
+        "next": "import"
+      }
+    ],
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": false,
+          "FunctionExpression": true
+        }
+      }
+    ]
+  }
+}
