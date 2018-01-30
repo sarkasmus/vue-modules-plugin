@@ -118,13 +118,16 @@ export default class {
    * @return {Object} this.
    * */
   parseData (): this {
+    try {
+      this.module.data()
+    } catch (e) {
+      return this
+    }
+
     for (let data in this.module.data()) {
       if (Object.prototype.hasOwnProperty.call(this.module.data(), data)) {
-        try {
-          this.moduleObject[data] = this.module.data()[data]
-        } catch (e) {
-          throw new Error('dssddsdssd')
-        }
+        this.moduleObject[data] = this.module.data()[data]
+
       }
     }
 
